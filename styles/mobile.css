@@ -12,9 +12,13 @@ body {
     padding: 0 15px;
   }
   #logo {
-    text-align: center;
+    display:flex;
+    justify-content: space-between;
+    padding:5px;
   }
-  
+  .burger {
+    display: none;
+  }
   header {
     background-color: #263248;
   }
@@ -33,7 +37,11 @@ body {
     text-align: center;
     font-style: italic;
   }
-
+  nav{
+    overflow: hidden;
+    transition: height 0.5s;
+    overflow: auto;
+  }
   nav ul {
     list-style: none;
     padding-left: 0;
@@ -55,5 +63,11 @@ body {
   .resize-img{
     width: 100%;
     height: auto;
+  }
+  .burger > .line{
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
   }
   
